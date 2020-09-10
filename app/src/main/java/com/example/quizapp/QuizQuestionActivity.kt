@@ -35,7 +35,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setQuestion() {
-        mCurrentPosition = 1
+
         val question = mQuestionsList!![mCurrentPosition -1]
 
         defaultOptionsView()
@@ -103,10 +103,11 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 }else {
                     val question = mQuestionsList?.get(mCurrentPosition -1)
-                    if(question!!.correctAnswer != mSelectedOptionPosition) {
+
+                    if(question?.correctAnswer != mSelectedOptionPosition) {
                         answerView(mSelectedOptionPosition,R.drawable.wrong_option_border_bg)
                     }
-                    answerView(mSelectedOptionPosition, R.drawable.correct_option_border_bg)
+                    answerView(question?.correctAnswer ?: 0, R.drawable.correct_option_border_bg)
                     if (mCurrentPosition == mQuestionsList!!.size){
                         btn_submit.text = "FINISH"
                     }else {
