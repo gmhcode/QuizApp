@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"/>
         <activity
             android:name=".QuizQuestionActivity"
-            android:screenOrientation="portrait"
-            >
-
-        </activity>
-        <!--adjustResize makes the views resize themselves when the keyboard comes in -->
+            android:screenOrientation="portrait"/> <!-- adjustResize makes the views resize themselves when the keyboard comes in -->
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
