@@ -14,7 +14,8 @@
             android:theme="@style/NoActionBarTheme"/>
         <activity
             android:name=".QuizQuestionActivity"
-            android:screenOrientation="portrait"/> <!-- adjustResize makes the views resize themselves when the keyboard comes in -->
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"/> <!-- adjustResize makes the views resize themselves when the keyboard comes in -->
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
